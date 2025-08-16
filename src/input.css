@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Custom styles that complement Tailwind CSS */
+
+/* This CSS handles the floating label animation. 
+   When the input sibling is focused or has a value (is not showing its placeholder),
+   these styles are applied to the label.
+*/
+.city-input:focus + .city-label,
+.city-input:not(:placeholder-shown) + .city-label {
+    top: 1rem; /* Move up */
+    transform: translateY(-50%) scale(0.8); /* Shrink */
+    color: #3b82f6; /* text-blue-500 */
+}
+
+/* Adds a blue ring around the parent group when the input inside is focused, 
+   mimicking Tailwind's focus-within:ring behavior for better visual feedback.
+*/
+#origin-group:focus-within,
+#destination-group:focus-within {
+    outline: 2px solid #93c5fd; /* Equivalent to ring-2 ring-blue-300 */
+    outline-offset: -1px;
+}

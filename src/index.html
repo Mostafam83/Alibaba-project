@@ -1,0 +1,409 @@
+<!doctype html>
+<html dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <style>
+    body { font-family: IranYekan, sans-serif; }
+    .fade-in { animation: fadeIn .2s ease-out both; }
+    @keyframes fadeIn { from{opacity:0;transform:translateY(-6px)} to{opacity:1;transform:translateY(0)} }
+  </style>
+</head>
+<body>
+  <div class="w-screen h-screen flex flex-col">
+    <header class="w-screen h-20 shadow-md flex justify-around  z-50">
+      <div class="w-3/5 flex ">
+        <div class="flex h-20 w-1/5 items-center justify-center ml-2 md:mr-20">
+          <svg xmlns="http://www.w3.org/2000/svg" width="152" height="78" viewBox="0 0 132 48" fill="none">
+          <path d="M83.8918 29.1095C83.8918 33.3428 81.855 37.3085 77.1054 37.3085C75.3174 37.3085 74.0602 36.6986 73.2087 35.8557L72.8189 37.3085H70.5059V16.3924H73.4402V29.308C73.4402 31.9245 74.0732 34.7596 77.2118 34.7438C80.2555 34.7294 80.9244 31.7734 80.9244 29.308C80.9244 26.8425 80.2541 23.9053 77.2104 23.8923C76.5715 23.8995 75.9387 24.0178 75.3404 24.2419V21.8569C76.1511 21.534 77.0126 21.3577 77.885 21.3362C82.0449 21.3362 83.8918 25.4458 83.8918 29.1095ZM57.2982 37.3085H60.2341V16.3924H57.2982V37.3085ZM109.809 21.342C108.937 21.3635 108.075 21.5398 107.265 21.8627V24.2476C107.863 24.0234 108.496 23.9051 109.135 23.8981C112.178 23.911 112.849 26.8497 112.849 29.3137C112.849 31.7778 112.177 34.7309 109.129 34.7438C105.99 34.7596 105.357 31.9245 105.357 29.308V16.3924H102.423V37.3099H104.736L105.124 35.8571C105.977 36.7001 107.235 37.3099 109.023 37.3099C113.769 37.3099 115.809 33.3428 115.809 29.1109C115.809 25.4458 113.962 21.3362 109.809 21.3362V21.342ZM130.667 33.1831V27.7013C130.667 23.386 127.885 21.3492 124.678 21.3492C121.291 21.3492 118.91 23.55 118.91 23.55L120.311 25.5523C120.628 25.2991 122.311 24.039 124.517 24.039C126.4 24.039 127.926 24.9021 127.926 27.7948V31.2024C127.926 33.7498 125.337 34.843 123.591 34.843C122.039 34.843 120.898 34.2216 120.898 32.8479C120.898 30.522 124.092 29.8273 126.019 29.9251V27.6826C121.794 27.4654 118.006 29.2217 118.006 33.0234C118.006 35.6673 120.057 37.3042 123.129 37.3042C125.431 37.3042 127.42 36.4167 128.392 35.4472C128.913 36.7792 130.327 37.3042 131.425 37.3042L132 35.1581C131.077 34.9567 130.671 34.5151 130.671 33.1774L130.667 33.1831ZM98.7493 33.1831V27.7013C98.7493 23.386 95.9674 21.3492 92.7612 21.3492C89.3737 21.3492 86.9931 23.55 86.9931 23.55L88.3956 25.5523C88.7106 25.2991 90.3935 24.039 92.6001 24.039C94.483 24.039 96.0106 24.9021 96.0106 27.7948V31.2024C96.0106 33.7498 93.4214 34.843 91.6737 34.843C90.1217 34.843 88.981 34.2216 88.981 32.8479C88.981 30.522 92.1743 29.8273 94.1018 29.9251V27.6826C89.8771 27.4654 86.0883 29.2217 86.0883 33.0234C86.0883 35.6673 88.1395 37.3042 91.212 37.3042C93.5135 37.3042 95.5028 36.4167 96.4752 35.4472C96.9959 36.7792 98.4099 37.3042 99.5074 37.3042L100.083 35.1581C99.1593 34.9567 98.7537 34.5151 98.7537 33.1774L98.7493 33.1831ZM53.6259 33.1831V27.7013C53.6259 23.386 50.844 21.3492 47.6378 21.3492C44.2503 21.3492 41.8697 23.55 41.8697 23.55L43.2765 25.5523C43.5915 25.2991 45.2759 24.039 47.481 24.039C49.3653 24.039 50.8915 24.9021 50.8915 27.7948V31.2024C50.8915 33.7498 48.3023 34.843 46.5546 34.843C45.004 34.843 43.8633 34.2216 43.8633 32.8479C43.8633 30.522 47.0552 29.8273 48.9841 29.9251V27.6826C44.758 27.4711 40.975 29.2274 40.975 33.0292C40.975 35.673 43.0262 37.3099 46.0987 37.3099C48.4001 37.3099 50.388 36.4224 51.3604 35.4529C51.8826 36.7849 53.2951 37.3099 54.3941 37.3099L54.9694 35.1638C54.0359 34.9567 53.6331 34.5151 53.6331 33.1774L53.6259 33.1831ZM63.8977 37.3157H66.8321V21.8224H63.8977V37.3157ZM63.8977 19.3354H66.8321V16.3924H63.8977V19.3354Z" fill="black"/>
+<path d="M27.2308 35.7579C27.087 36.0182 26.7403 36.1362 26.4325 36.2239L22.9242 37.215C22.6164 37.3013 22.2323 37.3718 21.9748 37.2251C21.7173 37.0784 21.5893 36.7144 21.5073 36.408C16.4124 17.4036 15.709 13.3069 13.6593 13.3069C11.6095 13.3069 10.9119 17.4036 5.81124 36.408C5.72925 36.7144 5.59835 37.0784 5.34375 37.2251C5.08915 37.3718 4.70077 37.3013 4.39295 37.215L0.884629 36.2239C0.576806 36.1362 0.231587 36.0182 0.0877444 35.7579C-0.0560982 35.4975 0.00719254 35.1163 0.0877444 34.8186C5.30204 15.4675 8.21484 10 13.6593 10C19.1037 10 22.0223 15.466 27.2294 34.8186C27.3099 35.1163 27.3704 35.5062 27.2308 35.7579Z" fill="#FDB913"/>
+<path d="M30.3479 23.5341C30.3447 23.7203 30.3021 23.9037 30.2228 24.0721L30.0789 24.4706C30.0158 24.7061 29.8729 24.9125 29.6747 25.0546C29.4436 25.1517 29.1861 25.1664 28.9454 25.0963C24.3738 24.0874 19.5948 24.6703 15.3996 26.7484C11.2045 28.8265 7.845 32.2751 5.8774 36.5231C5.73356 36.8396 5.50629 37.3099 4.99421 37.3099C4.78918 37.3091 4.58548 37.2771 4.39007 37.215L0.881756 36.2239H0.873125C0.467489 36.1089 0 35.9521 0 35.404C0.0149912 35.1669 0.0796829 34.9356 0.189873 34.7251C2.68258 29.3822 7.1079 25.1827 12.574 22.9731C18.0401 20.7635 24.1406 20.708 29.6459 22.8178C29.9192 22.9185 30.3479 23.0796 30.3479 23.5341Z" fill="url(#paint0_linear_2574_8208)"/>
+<defs>
+<linearGradient id="paint0_linear_2574_8208" x1="0.00287685" y1="29.2893" x2="30.3479" y2="29.2893" gradientUnits="userSpaceOnUse">
+<stop offset="0.3" stop-color="#FDB913"/>
+<stop offset="0.75" stop-color="#F7941F"/>
+</linearGradient>
+</defs>
+          </svg>
+        </div>
+        <ul class="h-20 flex items-center w-4/5 md:hidden lg:flex">
+          <li class="relative flex items-center border-l-2 pl-1 border-gray-300 group text-gray-500 text-xl">
+    <!-- عنوان + آیکن -->
+           <div class="flex items-center cursor-pointer">
+             <span class="ml-1">بلیط هواپیما</span>
+             <svg class="ml-1" viewBox="0 0 24 24" width="1.5em" fill="currentColor">
+             <path d="M21.266 7.302a.75.75 0 0 1 1.037 1.08l-.069.066-9.75 8.25a.75.75 0 0 1-.89.058l-.078-.058-9.75-8.25a.75.75 0 0 1 .893-1.202l.075.056L12 15.142l9.266-7.84Z"></path>
+            </svg>
+           </div>
+
+  <!-- زیرمنو با انیمیشن نرم -->
+            <ul class="absolute right-0 top-full mt-1 w-40 bg-white border border-gray-300 rounded-xl shadow-md 
+             opacity-0 scale-95 invisible transition-all duration-200 ease-out
+             group-hover:opacity-100 group-hover:scale-100 group-hover:visible">
+             <li class="px-4 py-2 w-36 h-12 m-2 rounded-4xl hover:bg-gray-100 cursor-pointer text-xl text-gray-400">پرواز داخلی</li>
+             <li class="px-4 py-2  w-36 h-12 m-2 rounded-4xl hover:bg-gray-100 cursor-pointer text-xl text-gray-400">پرواز خارجی</li>
+             </ul>
+             </li>
+
+          <li class="mx-2 border-l-2 pl-2 border-gray-300 text-gray-500 text-xl">
+            بلیط قطار
+          </li>
+          <li class="mx-2 border-l-2 pl-2 border-gray-300 text-gray-500 text-xl">
+            بلیط اتوبوس
+          </li>
+          <li class="relative flex items-center border-l-2 pl-1 border-gray-300 group text-gray-500 text-xl">
+    <!-- عنوان + آیکن -->
+           <div class="flex items-center cursor-pointer">
+             <span class="ml-1">اقامت</span>
+             <svg class="ml-1" viewBox="0 0 24 24" width="1.5em" fill="currentColor">
+             <path d="M21.266 7.302a.75.75 0 0 1 1.037 1.08l-.069.066-9.75 8.25a.75.75 0 0 1-.89.058l-.078-.058-9.75-8.25a.75.75 0 0 1 .893-1.202l.075.056L12 15.142l9.266-7.84Z"></path>
+            </svg>
+           </div>
+
+  <!-- زیرمنو با انیمیشن نرم -->
+            <ul class="absolute left-33 right-0 top-full mt-1 w-44 bg-white border border-gray-300 rounded-xl shadow-md 
+             opacity-0 scale-95 invisible transition-all duration-200 ease-out
+             group-hover:opacity-100 group-hover:scale-100 group-hover:visible">
+             <li class="px-4 py-2 w-40 h-12 m-2 rounded-4xl hover:bg-gray-100 cursor-pointer text-xl text-gray-400"> هتل</li>
+             <li class="px-4 py-2  w-40 h-12 m-2 rounded-4xl hover:bg-gray-100 cursor-pointer text-xl text-gray-400"> ویلا و اقامتگاه</li>
+             </ul>
+             </li>
+          <li class="mx-2 border-l-2 pl-2 border-gray-300 text-gray-500 text-xl">
+            تور
+          </li>
+          <li class="mx-2 border-l-2 pl-2 border-gray-300 text-gray-500 text-xl">
+            ویزا
+          </li>
+          <li class="mx-2 border-l-2 pl-2 border-gray-300 text-gray-500 text-xl">
+            پنل آژانسی
+          </li>
+          <li>
+            <li class="relative flex items-center pl-1 group text-gray-500 text-xl">
+    <!-- عنوان + آیکن -->
+           <div class="flex items-center cursor-pointer">
+             <span class="ml-1">بیشتر </span>
+             <svg class="ml-1" viewBox="0 0 24 24" width="1.5em" fill="currentColor">
+             <path d="M21.266 7.302a.75.75 0 0 1 1.037 1.08l-.069.066-9.75 8.25a.75.75 0 0 1-.89.058l-.078-.058-9.75-8.25a.75.75 0 0 1 .893-1.202l.075.056L12 15.142l9.266-7.84Z"></path>
+            </svg>
+           </div>
+
+  <!-- زیرمنو با انیمیشن نرم -->
+            <ul class="absolute right-0 top-full mt-1 w-44 bg-white border border-gray-300 rounded-xl shadow-md 
+             opacity-0 scale-95 invisible transition-all duration-200 ease-out
+             group-hover:opacity-100 group-hover:scale-100 group-hover:visible">
+             <li class="px-4 py-2 w-40 h-12 m-2 rounded-4xl hover:bg-gray-100 cursor-pointer text-xl text-gray-400">علی بابا پلاس</li>
+             <li class="px-4 py-2  w-40 h-12 m-2 rounded-4xl hover:bg-gray-100 cursor-pointer text-xl text-gray-400"> مجله علی‌بابا</li>
+             <li class="px-4 py-2  w-40 h-12 m-2 rounded-4xl hover:bg-gray-100 cursor-pointer text-xl text-gray-400"> بیمه مسافرتی</li>
+             <li class="px-4 py-2  w-40 h-12 m-2 rounded-4xl hover:bg-gray-100 cursor-pointer text-xl text-gray-400">سفر اقساطی </li>
+             </ul>
+             </li>
+          </li>
+        </ul>
+      </div>
+     <div class="w-2/5 flex justify-evenly md:ml-5 md:text-sm">
+      <ul class="flex justify-evenly w-4/5">
+        <li class="flex w-52 h-20 items-center justify-center text-gray-500
+        ">
+          <a href="#" class="flex items-center h-12 rounded-2xl  hover:bg-blue-50">
+            <div class="mx-1 mt-1">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" data-v-1b47e874=""><path d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12S6.2 22.5 12 22.5 22.5 17.8 22.5 12 17.8 1.5 12 1.5ZM12 3a9 9 0 0 1 9 9 9 9 0 0 1-9 9 9 9 0 0 1-9-9 9 9 0 0 1 9-9Zm.242 12.634a.72.72 0 0 0-.72.72v.36a.72.72 0 0 0 .636.715l.084.005a.72.72 0 0 0 .72-.72v-.36a.72.72 0 0 0-.72-.72Zm-.285-9.068c-.5 0-.943.07-1.33.208a2.664 2.664 0 0 0-.98.592c-.264.258-.467.57-.605.937a3.48 3.48 0 0 0-.206 1.229c0 .354.054.683.164.99.108.308.257.6.441.878.185.279.394.541.629.788.232.247.475.488.724.721.286.266.48.565.578.897.1.334.147.693.147 1.078h1.445a6.226 6.226 0 0 0-.079-.96 2.803 2.803 0 0 0-.226-.726 3.122 3.122 0 0 0-.41-.636 11.256 11.256 0 0 0-.627-.69 56.686 56.686 0 0 0-.511-.519 3.796 3.796 0 0 1-.43-.507 2.073 2.073 0 0 1-.403-1.268c0-.546.144-.973.43-1.283.287-.31.703-.464 1.25-.464.228 0 .448.03.659.09.21.059.396.153.56.28a1.4 1.4 0 0 1 .395.484c.1.195.148.428.148.698h1.444a2.797 2.797 0 0 0-.258-1.186 2.65 2.65 0 0 0-.678-.885 3.035 3.035 0 0 0-1.01-.555 4.033 4.033 0 0 0-1.26-.191Z" fill-rule="evenodd"></path></svg>
+            </div>
+            <span class="text-xl mb-2">مرکز پشتیبانی آنلاین</span>
+          </a>
+        </li>
+        <li class="flex w-52 h-20 items-center justify-center text-gray-500">
+          <a href="#"  class="flex items-center h-12 rounded-2xl  hover:bg-blue-50">
+            <div class="mx-1 mt-1">
+              <svg viewBox="0 0 24 24" width="1.5em" fill="currentColor" data-v-1b47e874=""><path d="M13.875 1.5a1.5 1.5 0 0 1 1.496 1.388l.004.112v1.5h1.875a2.25 2.25 0 0 1 2.246 2.118l.004.132V18a2.25 2.25 0 0 1-2.118 2.246l-.132.004h-.375V21a.75.75 0 0 1-1.495.087L15.375 21v-.75h-4.97a3.001 3.001 0 0 1-2.755 2.246l-.15.004a3 3 0 0 1-2.25-4.984V6.75a2.25 2.25 0 0 1 2.118-2.246L7.5 4.5h1.875V3a1.5 1.5 0 0 1 1.388-1.496l.112-.004h3ZM7.5 18a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm9.75-12H7.5a.75.75 0 0 0-.745.663l-.005.087v9.845a3.004 3.004 0 0 1 3.655 2.155h6.845a.75.75 0 0 0 .745-.663L18 18V6.75a.75.75 0 0 0-.663-.745L17.25 6Zm-3 2.25a.75.75 0 0 1 .745.663L15 9v6.75a.75.75 0 0 1-1.495.088l-.005-.088V9a.75.75 0 0 1 .75-.75Zm-3.75 0a.75.75 0 0 1 .745.663L11.25 9v6.75a.75.75 0 0 1-1.495.088l-.005-.088V9a.75.75 0 0 1 .75-.75ZM13.875 3h-3v1.5h3V3Z" fill-rule="evenodd"></path></svg>
+            </div>
+            <span class="text-xl mb-2">سفرهای من</span>
+          </a>
+        </li>
+        <li class="flex w-52 h-20 items-center justify-center text-gray-500">
+          <a href="#"  class="flex items-center h-12 rounded-2xl  hover:bg-blue-50">
+            <div class="mx-1 mt-1">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" class="ml-1 text-grays-500" data-v-1b47e874=""><path d="M17.25 12.75A3.75 3.75 0 0 1 21 16.5v3.75a.75.75 0 0 1-.75.75H3.75a.75.75 0 0 1-.75-.75V16.5a3.75 3.75 0 0 1 3.75-3.75h10.5Zm0 1.5H6.75A2.25 2.25 0 0 0 4.5 16.5v3h15v-3a2.25 2.25 0 0 0-2.118-2.246l-.132-.004ZM12 3a4.5 4.5 0 1 1 0 9 4.5 4.5 0 1 1 0-9Zm0 1.5a3 3 0 1 0-.001 5.999A3 3 0 0 0 12 4.5Z" fill-rule="evenodd"></path></svg>
+            </div>
+            <span class="text-xl mb-2">ورود یا ثبت‌نام</span>
+          </a>
+        </li>
+      </ul>
+     </div>
+    </header>
+    <div class="mt-0 relative">
+      <picture class="z-10 bg-cover w-screen h-screen bg-center">
+        <img src="assets/hero.jpg" alt="" class="md:mt-22 md:px-0 xl:mt-0 xl:px-12">
+      </picture>
+      <div class="w-screen h-80 flex justify-center  absolute top-70">
+        <div class="md:w-screen md:h-80 xl:w-4/5 xl:h-80 bg-white flex flex-col border-1 border-gray-400 rounded-xl">
+          <ul class="w-full h-28 pt-8  flex justify-evenly border-b-1 border-gray-300 xl:pt-7 font-bold">
+            <li class="h-full w-28 hover:border-b-6  border-blue-700 rounded-md text-blue-600">
+              <div class="h-1/2 w-full flex items-center">
+                <svg viewBox="0 0 24 24" width="36px" height="36px" fill="currentColor" class="block mx-auto mb-1" data-v-c808c2a8=""><path d="M5.557 5.565c.45-.45.713-.435 1.163-.06l.105.09a.75.75 0 0 1 .112.105l.255.255 3 3.293a.667.667 0 0 0 .675.195l1.988-.555a.682.682 0 0 0 .48-.75l-.045-.165a.376.376 0 0 1 0-.09l.075-.105c.067-.075.135-.158.21-.233l.113-.105c.12-.12.247-.127.33-.052l.682.682a.667.667 0 0 0 .66.173l2.37-.675a1.013 1.013 0 0 1 .982.217l.06.06h-.052l-6.105 2.82a.676.676 0 0 0-.217 1.065l3.217 3.525a.667.667 0 0 0 .75.158l1.5-.698a.188.188 0 0 1 .248.038.173.173 0 0 1 0 .217L15 18.098l-.082.097a.165.165 0 0 1-.233.045.172.172 0 0 1-.068-.195l.075-.135.69-1.5a.668.668 0 0 0-.157-.75l-3.518-3.217a.674.674 0 0 0-1.072.217l-2.85 6.09-.045-.052h-.038a1.012 1.012 0 0 1-.202-.96l.682-2.385a.667.667 0 0 0-.172-.66l-.698-.705a.187.187 0 0 1 0-.263l.12-.127a2.36 2.36 0 0 1 .24-.218l.105-.075h.18a.674.674 0 0 0 .863-.45l.57-2.01a.683.683 0 0 0-.195-.682l-3.293-3-.187-.18a1.92 1.92 0 0 1-.465-.63c-.09-.24 0-.45.3-.788h.007Zm10.373 13.5 3.082-3.075a1.5 1.5 0 0 0 .24-1.965l-.06-.09a1.5 1.5 0 0 0-1.875-.435l-1.035.473-2.25-2.475 5.25-2.438h.06a1.328 1.328 0 0 0 .33-2.205l-.044-.105-.128-.09a2.318 2.318 0 0 0-2.198-.45l-1.95.54-.42-.427a1.56 1.56 0 0 0-2.182.082 3.761 3.761 0 0 0-.75.863v.075a.668.668 0 0 0-.06.24v.165l-1.012.277-2.806-3.052-.18-.188a4.337 4.337 0 0 0-.36-.285 2.002 2.002 0 0 0-3 .15 1.995 1.995 0 0 0-.6 2.25l.045.105c.23.474.563.889.975 1.215l3 2.753-.3 1.035h-.165a.646.646 0 0 0-.307.097 3.54 3.54 0 0 0-.75.585l-.24.248a1.553 1.553 0 0 0 .06 2.047l.435.443-.563 1.987a2.325 2.325 0 0 0 .533 2.25l.052.053A1.327 1.327 0 0 0 9 19.365v-.067l2.43-5.25 2.475 2.25-.473 1.035.068-.083a1.516 1.516 0 1 0 2.453 1.778" fill-rule="evenodd"></path></svg>
+              </div>
+              <span class="h-1/2 w-full flex justify-center text-xl">پرواز داخلی</span>
+            </li>
+            <li class="h-full w-28 hover:border-b-6 border-blue-700 rounded-md hover:text-blue-600">
+              <div class="h-1/2 w-full flex items-center">
+                <svg viewBox="0 0 24 24" width="36px" height="36px" fill="currentColor" class="block mx-auto mb-1" data-v-c808c2a8=""><path d="M6.975 4.505a2.002 2.002 0 0 1 3-.15c.126.1.246.208.36.322l.18.188 2.76 3.052 1.012-.277v-.165a.668.668 0 0 1 .06-.24l.038-.075a3.72 3.72 0 0 1 .713-.863 1.56 1.56 0 0 1 2.204-.06l.42.428 1.973-.563a2.317 2.317 0 0 1 2.197.45l.105.09.053.053a1.327 1.327 0 0 1-.3 2.197h-.052l-5.25 2.438 2.25 2.475.99-.413a1.5 1.5 0 0 1 1.897.405l.067.09a1.5 1.5 0 0 1-.247 1.965l-3.082 3.075a1.523 1.523 0 1 1-2.468-1.785l-.037.06.472-1.035-2.475-2.25-2.43 5.25v.068a1.334 1.334 0 0 1-2.205.315l-.053-.053a2.25 2.25 0 0 1-.532-.93 5.4 5.4 0 0 0 1.32-1.042v.082a.99.99 0 0 0 .203.953h.044v.052-.037l2.813-6.12a.676.676 0 0 1 1.072-.218l3.518 3.218a.668.668 0 0 1 .157.75l-.69 1.5-.075.135a.173.173 0 0 0 .194.222.163.163 0 0 0 .107-.072l.082-.098 3.157-3.157a.172.172 0 0 0 0-.218.188.188 0 0 0-.247-.037l-1.5.697a.674.674 0 0 1-.75-.157l-3.225-3.428A.674.674 0 0 1 15 10.527l6.105-2.82h.052l-.06-.06a1.012 1.012 0 0 0-1.02-.255l-2.37.675a.675.675 0 0 1-.66-.172l-.682-.683c-.082-.075-.21-.067-.33.053l-.113.105c-.075.075-.142.157-.21.232l-.075.105a.376.376 0 0 0 0 .09l.045.165a.683.683 0 0 1-.48.75l-1.987.555a.675.675 0 0 1-.675-.195l-3-3.292-.255-.255-.105-.105-.105-.09c-.457-.375-.75-.39-1.17.06-.42.45-.39.547-.3.787.12.244.289.46.495.638l.188.18 3.3 3a.682.682 0 0 1 .187.682l-.525 2.108a5.437 5.437 0 0 0-.832-1.988 5.445 5.445 0 0 0-1.785-1.65L7.395 8.052a3.57 3.57 0 0 1-.975-1.215l-.045-.105a2.002 2.002 0 0 1 .6-2.227Zm-1.072 4.95a4.403 4.403 0 1 1 0 8.805 4.403 4.403 0 0 1 0-8.805Zm.93 4.942h-1.86c.032.73.195 1.45.48 2.123.09.22.222.422.39.592l.06.053.097-.023c.167-.17.3-.371.39-.592a6.157 6.157 0 0 0 .442-2.153Zm-2.948 0h-1.26a3.345 3.345 0 0 0 1.777 2.423 7.418 7.418 0 0 1-.517-2.423Zm5.295 0H7.92a7.629 7.629 0 0 1-.51 2.423 3.338 3.338 0 0 0 1.77-2.423Zm-4.785-3.502a3.353 3.353 0 0 0-1.77 2.422h1.26c.037-.83.21-1.648.51-2.422Zm3 0 .045.112c.271.743.428 1.521.465 2.31h1.26a3.338 3.338 0 0 0-1.755-2.422h-.015Zm-1.5-.353-.06.06c-.167.17-.3.372-.39.593a6.157 6.157 0 0 0-.48 2.122h1.867a6.157 6.157 0 0 0-.48-2.122A1.83 1.83 0 0 0 6 10.602l-.105-.06Z" fill-rule="evenodd"></path></svg>
+              </div>
+              <span  class="h-1/2 w-full flex justify-center text-xl">پرواز خارجی</span>
+            </li>
+            <li class="h-full w-28 hover:border-b-6 border-blue-700 rounded-md hover:text-blue-600">
+              <div class="h-1/2 w-full flex items-center">
+                <svg viewBox="0 0 24 24" width="36px" height="36px" fill="currentColor" class="block mx-auto mb-1" data-v-c808c2a8=""><path d="m16.655 16.073.045.06 2.573 3.855a.645.645 0 0 1-1.028.75l-.045-.06-2.572-3.855a.645.645 0 0 1 1.027-.75Zm-7.852-.12a.637.637 0 0 1 .217.825l-.037.067L6.41 20.7a.645.645 0 0 1-.877.18.638.638 0 0 1-.21-.825v-.067l2.572-3.855a.63.63 0 0 1 .908-.18Zm6.397 2.46a.645.645 0 0 1 .075 1.282H9.41a.645.645 0 0 1-.075-1.282H15.2ZM13.91 16.5a.645.645 0 0 1 .075 1.282H10.7a.645.645 0 0 1-.075-1.282h3.285ZM15.523 3a3.217 3.217 0 0 1 3.21 3.202v7.073a1.93 1.93 0 0 1-1.95 1.928h-9a1.928 1.928 0 0 1-1.905-1.928V6.202A3.218 3.218 0 0 1 9.095 3h6.428Zm1.927 6.832-.832.413a4.575 4.575 0 0 1-1.8.465h-4.785a4.613 4.613 0 0 1-1.823-.383l-.195-.09-.825-.412v3.45a.645.645 0 0 0 .57.637h9.023a.645.645 0 0 0 .645-.637l.022-3.443Zm-8.55 1.5a.969.969 0 0 1 .536 1.706.967.967 0 1 1-.536-1.706Zm6.81 0a.967.967 0 1 1-.96.96.959.959 0 0 1 .96-.944v-.016Zm-.187-7.057H9.095A1.935 1.935 0 0 0 7.16 6.202v2.175l1.373.698c.39.194.817.309 1.252.338h4.823a3.39 3.39 0 0 0 1.275-.255l.165-.075 1.402-.706V6.202a1.928 1.928 0 0 0-1.815-1.927h-.112Zm-1.29.637a.645.645 0 0 1 .075 1.283h-3.93a.652.652 0 0 1-.645-.645.645.645 0 0 1 .57-.638h3.93Z" fill-rule="evenodd"></path></svg>
+              </div>
+              <span  class="h-1/2 w-full flex justify-center text-xl">قطار</span>
+            </li>
+            <li class="h-full w-28 hover:border-b-6 border-blue-700 rounded-md hover:text-blue-600">
+              <div class="h-1/2 w-full flex items-center">
+                <svg viewBox="0 0 24 24" width="36px" height="36px" fill="currentColor" class="block mx-auto mb-1" data-v-c808c2a8=""><path d="M15.48 3a3.33 3.33 0 0 1 3.33 3.33h.668a1.335 1.335 0 0 1 1.327 1.23v2.1a.667.667 0 0 1-1.328.083V7.65h-.667v8.662a2.01 2.01 0 0 1-1.342 1.89v1.11a1.665 1.665 0 1 1-3.33 0v-.997h-3.75v.997a1.665 1.665 0 1 1-3.33 0v-1.11a2.01 2.01 0 0 1-1.335-1.89V7.65h-.646v1.995a.667.667 0 0 1-1.327.105v-2.1a1.343 1.343 0 0 1 1.23-1.335h.75A3.33 3.33 0 0 1 9.075 3h6.405ZM9.075 18.315h-.667v.997a.338.338 0 0 0 .667.06v-1.057Zm7.065 0h-.66v.997a.33.33 0 0 0 .545.259.337.337 0 0 0 .115-.199v-1.057Zm-9.06-5.648v3.646a.675.675 0 0 0 .585.667h9.143a.667.667 0 0 0 .667-.585v-3.75a14.287 14.287 0 0 1-10.395.023Zm1.732 1.178a.668.668 0 0 1 .668.667v1.073a.667.667 0 1 1-1.335 0v-1.073a.668.668 0 0 1 .668-.667Zm6.93 0a.668.668 0 0 1 .668.667v1.073a.667.667 0 1 1-1.335 0v-1.073a.668.668 0 0 1 .668-.667Zm-.262-9.532H9.075A1.995 1.995 0 0 0 7.08 6.195v5.055a12.982 12.982 0 0 0 10.388 0V6.315a2.003 2.003 0 0 0-1.988-2.002Zm-.645 1.335a.66.66 0 0 1 .645.667.653.653 0 0 1-.57.66H9.72a.668.668 0 0 1-.075-1.327h5.19Z" fill-rule="evenodd"></path></svg>
+              </div>
+              <span class="h-1/2 w-full flex justify-center text-xl">اتوبوس</span>
+            </li>
+            <li class="h-full w-28 hover:border-b-6 border-blue-700 rounded-md hover:text-blue-600">
+              <div class="h-1/2 w-full flex items-center">
+                <svg viewBox="0 0 24 24" width="36px" height="36px" fill="currentColor" class="block mx-auto mb-1" data-v-c808c2a8=""><path d="M12 3a3.376 3.376 0 0 1 3.351 3H16.5a2.25 2.25 0 0 1 2.25 2.25v3.095A3.001 3.001 0 0 1 21 14.25v2.25a1.5 1.5 0 0 1-1.5 1.5h-.75a3 3 0 0 1-3 3h-7.5a3 3 0 0 1-3-3H4.5a1.5 1.5 0 0 1-1.496-1.388L3 16.5v-2.25a3 3 0 0 1 2.25-2.902V8.25A2.25 2.25 0 0 1 7.5 6h1.146A3.375 3.375 0 0 1 12 3Zm5.25 9-.997.75a3.75 3.75 0 0 1-2.002.742l-.001.758a.75.75 0 0 1-1.495.088l-.005-.088v-.75h-1.5v.75a.75.75 0 0 1-1.495.088l-.005-.088v-.758a3.75 3.75 0 0 1-1.838-.625l-.165-.117L6.75 12v6a1.5 1.5 0 0 0 1.388 1.496l.112.004h7.5a1.5 1.5 0 0 0 1.5-1.5v-6Zm-3 4.5a.75.75 0 0 1 .088 1.495L14.25 18h-4.5a.75.75 0 0 1-.087-1.495l.087-.005h4.5Zm4.5-3.548V16.5h.75v-2.25a1.5 1.5 0 0 0-.683-1.258l-.066-.04Zm-13.5-.001-.056.033a1.5 1.5 0 0 0-.69 1.153l-.004.113v2.25h.75v-3.549ZM16.5 7.5h-9a.75.75 0 0 0-.75.75v1.875l1.898 1.425a2.25 2.25 0 0 0 1.102.436v-.736a.75.75 0 0 1 1.495-.088l.005.088V12h1.5v-.75a.75.75 0 0 1 1.495-.088l.005.088v.736a2.25 2.25 0 0 0 .97-.344l.132-.092 1.898-1.425V8.25a.75.75 0 0 0-.663-.745L16.5 7.5Zm-4.5-3c-.911 0-1.67.65-1.84 1.493L10.158 6h3.68l-.025-.104a1.876 1.876 0 0 0-1.69-1.392L12 4.5Z"></path></svg>
+              </div>
+              <span class="h-1/2 w-full flex justify-center text-xl">تور</span>
+            </li>
+            <li class="h-full w-28 hover:border-b-6 border-blue-700 rounded-md hover:text-blue-600">
+              <div class="h-1/2 w-full flex items-center">
+                <svg viewBox="0 0 24 24" width="36px" height="36px" fill="currentColor" class="block mx-auto mb-1" data-v-c808c2a8=""><path d="M14.655 3.75a.675.675 0 0 1 .67.59l.005.085h2.595A2.175 2.175 0 0 1 20.1 6.6v12.067a1.425 1.425 0 0 1-1.425 1.425H5.107c-.75 0-1.357-.607-1.357-1.357v-7.966a2.228 2.228 0 0 1 2.047-2.242v-.015a.675.675 0 0 1 1.345-.085l.005.085v.007h2.738v-1.92a2.175 2.175 0 0 1 2.047-2.17v-.004a.675.675 0 0 1 1.345-.085l.006.085h.697a.674.674 0 0 1 .675-.675Zm-4.77 6.12H5.97a.877.877 0 0 0-.545.196l-.073.067a.879.879 0 0 0-.251.63v7.972c0 .003.003.007.007.007h4.778V9.87h-.001Zm2.712-4.096h-.537a.825.825 0 0 0-.825.826v12.142h2.063v-1.305a1.425 1.425 0 0 1 1.313-1.42l.111-.005h.548c.788 0 1.425.638 1.425 1.425v1.304l1.98.001a.07.07 0 0 0 .052-.022l.017-.023.006-.03V6.6a.825.825 0 0 0-.825-.825h-3.27l-.01-.001h-2.048Zm2.673 11.588h-.547a.075.075 0 0 0-.075.075v1.304h.697v-1.304a.075.075 0 0 0-.023-.052l-.023-.017-.029-.006Zm-6.758-.99a.675.675 0 0 1 .085 1.345l-.085.005h-2.04a.676.676 0 0 1-.084-1.345l.084-.005h2.04Zm0-2.76a.675.675 0 0 1 .085 1.345l-.085.005h-2.04a.676.676 0 0 1-.084-1.345l.084-.005h2.04Zm5.46-.322a.675.675 0 0 1 .085 1.345l-.085.005h-1.364a.676.676 0 0 1-.085-1.345l.085-.005h1.364Zm3.406 0a.675.675 0 0 1 .084 1.345l-.084.005h-1.366a.676.676 0 0 1-.084-1.345l.084-.005h1.366Zm-8.866-2.438a.675.675 0 0 1 .085 1.345l-.085.005h-2.04a.676.676 0 0 1-.084-1.345l.084-.005h2.04Zm5.46-.292a.675.675 0 0 1 .085 1.345l-.085.005h-1.364a.676.676 0 0 1-.085-1.345l.085-.005h1.364Zm3.406 0a.675.675 0 0 1 .084 1.345l-.084.005h-1.366a.676.676 0 0 1-.084-1.345l.084-.005h1.366Zm-3.405-2.723a.675.675 0 0 1 .084 1.345l-.085.005h-1.364a.675.675 0 0 1-.085-1.344l.085-.006h1.364Zm3.405 0a.675.675 0 0 1 .084 1.345l-.084.005h-1.366a.675.675 0 0 1-.084-1.344l.084-.006h1.366Z" fill-rule="evenodd"></path></svg>
+              </div>
+              <span class="h-1/2 w-full flex justify-center text-xl">هتل</span>
+            </li>
+            <li class="h-full w-32 hover:border-b-6 border-blue-00 rounded-md hover:text-blue-600">
+              <div class="h-1/2 w-full flex items-center">
+                <svg viewBox="0 0 24 24" width="36px" height="36px" fill="currentColor" class="block mx-auto mb-1" data-v-c808c2a8=""><path d="M12.7477 9.91098C12.7477 9.49677 12.4119 9.16098 11.9977 9.16098C11.5835 9.16098 11.2477 9.49677 11.2477 9.91098V10.9195C11.2477 11.3337 11.5835 11.6695 11.9977 11.6695C12.4119 11.6695 12.7477 11.3337 12.7477 10.9195V9.91098Z"></path><path d="M10.6445 4.6719C11.2046 3.5992 12.7391 3.59723 13.302 4.6685L15.7477 9.32318V6.74985C15.7477 5.92142 16.4193 5.24985 17.2477 5.24985H17.9977C18.8261 5.24985 19.4977 5.92142 19.4977 6.74985V16.4601L20.9116 19.151C21.1043 19.5177 20.9632 19.9711 20.5966 20.1638C20.2299 20.3564 19.7765 20.2154 19.5838 19.8487L19.4005 19.4998H4.59381L4.41253 19.847C4.2208 20.2142 3.76773 20.3564 3.40056 20.1647C3.03339 19.9729 2.89117 19.5199 3.08289 19.1527L10.6445 4.6719ZM11.9741 5.36621L18.6123 17.9998H14.2477V14.9998C14.2477 13.7572 13.2403 12.7498 11.9977 12.7498C10.7551 12.7498 9.74771 13.7572 9.74771 14.9998V17.9998H5.37708L11.9741 5.36621ZM12.7477 14.9998V17.9998H11.2477V14.9998C11.2477 14.5856 11.5835 14.2498 11.9977 14.2498C12.4119 14.2498 12.7477 14.5856 12.7477 14.9998ZM17.9977 13.6053L17.2477 12.1779V6.74985H17.9977V13.6053Z" fill-rule="evenodd"></path></svg>
+              </div>
+              <span class="h-1/2 w-full flex justify-center text-xl">ویلا و اقامتگاه</span>
+            </li>
+          </ul>
+          <form action="#" class="w-9/10 h-40 m-auto flex flex-col">
+            <div class="w-full h-10 ">
+              <div class="w-full h-10" dir="rtl">
+               <div class="relative inline-block">
+    <!-- دکمه اصلی -->
+                  <button id="tripTypeBtn"
+                   class="flex items-center gap-2 h-10 px-4 rounded-3xl bg-white font-semibold text-gray-600 border border-gray-400 hover:bg-gray-50 transition"
+                   type="button">
+                   <span id="tripTypeText" class="py-1 truncate">یک طرفه</span>
+                   <svg id="tripTypeCaret" viewBox="0 0 24 24" width="1em" height="1em"
+                   fill="currentColor"
+                   class="transition-transform duration-200">
+                   <path d="M6.957 22.678c.627.53 1.55.51 2.153-.045l.052-.051.1-.108 7.972-9.423c.462-.546.513-1.33.127-1.93l-.092-.128-.046-.058L9.25 1.514a1.627 1.627 0 0 0-2.605 1.938l.086.12.046.056L13.86 12l-7.095 8.385a1.627 1.627 0 0 0 .097 2.208l.094.086Z" fill-rule="evenodd"></path>
+                   </svg>
+                  </button>
+
+    <!-- زیرمنو -->
+                  <div id="tripTypeMenu"
+                  class="absolute z-20 mt-2 w-40 right-0 bg-white border border-gray-200 rounded-xl shadow-lg hidden">
+                  <ul class="py-1 text-xl text-gray-700">
+                  <li>
+                  <button type="button"
+                  class="w-full text-right px-4 py-2 hover:bg-gray-200"
+                  data-value="یک طرفه">
+                     یک طرفه
+                  </button>
+                  </li>
+                   <li>
+                   <button type="button"
+                  class="w-full text-right px-4 py-2 hover:bg-gray-200"
+                  data-value="رفت و برگشت ">
+            رفت و برگشت
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+              </div>
+            </div>
+
+            <div class="w-full h-28 flex items-center justify-between xl:flex xl:items-center xl:justify-between">
+
+              <div id="selector-container" class="relative w-96">
+              <div class="relative flex items-center bg-white border border-slate-300 rounded-xl shadow-sm h-16">
+
+            <div id="origin-group" class="relative flex-1 h-full cursor-pointer">
+                <input type="text" id="origin-input" class="city-input w-full h-full px-4 pt-5 bg-transparent text-slate-800 outline-none rounded-r-xl text-xl" placeholder=" " required>
+                <label for="origin-input" class="city-label absolute top-1/2 -translate-y-1/2 right-4 text-slate-500 pointer-events-none bg-white px-1 transition-all duration-200 ease-in-out text-xl">مبدا (شهر)</label>
+                 <ul id="origin-list" class="city-list absolute top-full mt-2 w-full bg-white rounded-lg shadow-lg border border-slate-200 z-20 hidden">
+                    </ul>
+            </div>
+
+            <div class="w-px h-8 bg-slate-200"></div>
+
+            <div id="destination-group" class="relative flex-1 h-full cursor-pointer">
+                <input type="text" id="destination-input" class="city-input w-full h-full px-4 pt-5 bg-transparent text-slate-800 outline-none rounded-l-xl" placeholder=" " required>
+                <label for="destination-input" class="city-label absolute top-1/2 -translate-y-1/2 right-4 text-slate-500 pointer-events-none bg-white px-1 transition-all duration-200 ease-in-out pr-5 text-xl">مقصد (شهر)</label>
+                 <ul id="destination-list" class="city-list absolute top-full mt-2 w-full bg-white rounded-lg shadow-lg border border-slate-200 z-20 hidden">
+                    </ul>
+            </div>
+              </div>
+
+            <button id="swap-btn" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white border-2 border-slate-300 rounded-full flex items-center justify-center text-slate-600 hover:bg-slate-50 hover:rotate-180 transition-transform duration-300">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="m16.96 12.157.07.063 3.75 3.75a.757.757 0 0 1 .06.067l-.06-.067a.748.748 0 0 1 .22.53v.025a.728.728 0 0 1-.003.039L21 16.5a.747.747 0 0 1-.147.446l-.01.014-.008.01-.055.06-3.75 3.75a.75.75 0 0 1-1.123-.99l.063-.07 2.469-2.47H8.25a.75.75 0 0 1-.087-1.495l.087-.005h10.189l-2.47-2.47a.75.75 0 0 1-.062-.99l.063-.07a.75.75 0 0 1 .99-.063ZM8.03 3.22a.75.75 0 0 1 .063.99l-.063.07-2.47 2.47h10.19a.75.75 0 0 1 .088 1.495l-.088.005H5.56l2.47 2.47a.75.75 0 0 1 .063.99l-.063.07a.75.75 0 0 1-.99.063l-.07-.063-3.75-3.75-.055-.06a.644.644 0 0 1-.005-.007l.06.067A.756.756 0 0 1 3 7.5v-.014a.47.47 0 0 1 .003-.053L3 7.5a.756.756 0 0 1 .22-.53l3.75-3.75a.75.75 0 0 1 1.06 0Z"></path>
+            </svg>
+            </button>
+              </div>
+              <div class="z-20">
+                <div class="w-full max-w-3xl xl:w-56 md:max-w-2xl flex justify-center ">
+                  <div class="flex gap-10">
+                    <div class="flex border bg-white w-fit h-15 rounded-xl border-gray-400">
+                     <input id="departInput" readonly placeholder="تاریخ رفت" class="p-3 w-44 text-center cursor-pointer">
+                     <div class="flex items-center border-r">
+                     <input id="returnInput" readonly placeholder="تاریخ برگشت" class="p-3 w-44 text-center cursor-pointer bg-gray-100" disabled>
+                     <button id="toggleReturn" class="px-3 text-2xl" disabled>+</button>
+                   </div>
+                 </div>
+               </div>
+
+    <!-- تقویم -->
+               <div id="calendar" class="mt-3 hidden bg-white border fade-in">
+      <!-- هدر -->
+               <div class="px-4 py-3 flex items-center justify-between">
+               <button id="toggleMode" class="text-blue-600 hover:underline">تقویم میلادی</button>
+               <div class="flex items-center gap-2">
+                  <button id="prev" class="px-2 py-1 hover:bg-gray-100">&lt;</button>
+                  <button id="next" class="px-2 py-1 hover:bg-gray-100">&gt;</button>
+                  <div class="w-px h-5 bg-gray-300 mx-1"></div>
+                  <button id="gotoToday" class="text-blue-600 hover:underline">برو به امروز</button>
+               </div>
+               </div>
+      <!-- جداکننده بالای روزها -->
+      <div class="border-t"></div>
+
+      <!-- بدنه تقویم -->
+      <div id="months" class="p-4 flex gap-10"></div>
+
+      <!-- جداکننده پایین -->
+      <div class="border-t"></div>
+
+      <!-- فوتر -->
+      <div class="px-4 py-3 flex items-center justify-between">
+        <div id="summary" class="text-gray-500 text-sm">رفت —</div>
+        <button id="confirm" class="px-5 py-2 bg-blue-500 hover:bg-blue-600 text-white">تایید</button>
+      </div>
+    </div>
+                </div>
+              </div>
+              <div class="font-bold z-10 flex justify-center items-center h-20 w-32 sm:w-36 md:w-32 xl:w-56 ">
+
+                <div class="relative w-32 sm:w-36 md:w-32 xl:w-56 ">
+    <!-- لیبل -->
+    <label 
+      for="passengerInput" 
+      class="absolute -top-2 right-3 bg-white px-1 text-xs text-gray-500"
+    >
+      مسافران
+    </label>
+
+    <!-- اینپوت -->
+    <input 
+      type="text" 
+      id="passengerInput" 
+      value="1 مسافر" 
+      readonly
+      class="w-full border rounded-lg px-3 py-2 text-xl  cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 border-gray-500 h-15"
+    >
+
+    <!-- منو -->
+    <div id="passengerMenu" 
+         class="absolute w-full bg-white shadow-lg rounded-lg border mt-2 hidden z-50">
+      
+      <!-- بزرگسال -->
+      <div class="flex justify-between items-center p-3 border-b text-sm sm:text-base">
+        <span>بزرگسال (۱۲ سال به بالا)</span>
+        <div class="flex items-center">
+          <button id="adultMinus" class="w-8 h-8 bg-gray-300 text-white rounded disabled:opacity-50" disabled>-</button>
+          <span id="adultCount" class="mx-3">1</span>
+          <button id="adultPlus" class="w-8 h-8 bg-blue-500 text-white rounded">+</button>
+        </div>
+      </div>
+
+      <!-- کودک -->
+      <div class="flex justify-between items-center p-3 border-b text-sm sm:text-base">
+        <span>کودک (۲ تا ۱۲ سال)</span>
+        <div class="flex items-center">
+          <button id="childMinus" class="w-8 h-8 bg-gray-300 text-white rounded disabled:opacity-50" disabled>-</button>
+          <span id="childCount" class="mx-3">0</span>
+          <button id="childPlus" class="w-8 h-8 bg-blue-500 text-white rounded">+</button>
+        </div>
+      </div>
+
+      <!-- نوزاد -->
+      <div class="flex justify-between items-center p-3 text-sm sm:text-base">
+        <span>نوزاد (۱۰ روز تا ۲ سال)</span>
+        <div class="flex items-center">
+          <button id="infantMinus" class="w-8 h-8 bg-gray-300 text-white rounded disabled:opacity-50" disabled>-</button>
+          <span id="infantCount" class="mx-3">0</span>
+          <button id="infantPlus" class="w-8 h-8 bg-blue-500 text-white rounded">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+              </div>
+              <div class="flex justify-center items-center h-20 w-32 sm:w-36 md:w-32 xl:w-56">
+                <button class="w-32 sm:w-36 md:w-32 xl:w-56 bg-yellow-400 h-15 rounded-xl text-2xl hover:bg-yellow-500">
+                  جستجو
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-0 relative">
+      <div class="w-screen h-40  absolute top-80 xl:top-55 md:top-80 flex justify-center">
+        <div class="md:w-screen md:h-40 xl:w-4/5 xl:h-40  flex flex-col rounded-xl">
+
+          <div class="w-full h-12 flex items-center pr-5">
+
+            <h3 class="font-bold text-xl">سایر خدمات علی‌بابا</h3>
+
+          </div>
+
+          <div class="w-full flex h-28 border-1 border-gray-400 items-center justify-evenly rounded-xl">
+
+            <a href="#" class="w-1/5 h-full flex md:flex-col xl:flex-row items-center justify-center   xl:border-l-1 xl:border-gray-300 xl:h-12 ">
+              <picture class="w-18 h-18 md:bg-gray-300 xl:bg-white flex items-center justify-center rounded-2xl">
+                <img src="assets/safarcard-3dc2c4c4.svg" alt="">
+              </picture>
+              <span class="w-36 mt-1 text-xl">
+                سفرکارت (سازمانی)
+              </span>
+            </a>
+
+            <a href="#" class="w-1/5 h-full flex md:flex-col xl:flex-row items-center justify-center   xl:border-l-1 xl:border-gray-300 xl:h-12 ">
+              <picture class="w-18 h-18 md:bg-gray-300 xl:bg-white flex items-center justify-center rounded-2xl">
+                <img src="assets/insurance-icon-bb51c425.svg" alt="">
+              </picture>
+              <span class="w-32 flex justify-center  mt-1 text-xl">بیمه مسافرتی</span>
+            </a>
+
+            <a href="#" class="w-1/5 h-full flex md:flex-col xl:flex-row items-center justify-center   xl:border-l-1 xl:border-gray-300 xl:h-12 ">
+              <picture class="w-18 h-18 md:bg-gray-300 xl:bg-white flex items-center justify-center rounded-2xl">
+                <img src="assets/visa-icon-d8507c8e.svg" alt="">
+              </picture>
+              <span class="w-32 flex justify-center mt-1 text-xl">ویزای سفر</span>
+            </a>
+
+            <a href="#" class="w-1/5 h-full flex md:flex-col xl:flex-row items-center justify-center    xl:h-12 ">
+              <picture class="w-18 h-18 md:bg-gray-300 xl:bg-white flex items-center justify-center rounded-2xl">
+                <img src="assets/gtour-icon-5e641f1b.svg" alt="">
+              </picture>
+              <span class="w-32 flex justify-center mt-1 text-xl">تور ‌گردشگری</span>
+            </a>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>  
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
