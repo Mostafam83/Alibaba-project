@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import url('./assets/fonts/alibaba-sans/AlibabaSans-Regular.otf');
+@import url('./assets/fonts/alibaba-sans/AlibabaSans-Regular.ttf');
+@import url('./assets/fonts/vazirmatn/Vazirmatn-font-face.css');
 
 /* Custom styles that complement Tailwind CSS */
 
@@ -20,4 +23,18 @@
 #destination-group:focus-within {
     outline: 2px solid #93c5fd; /* Equivalent to ring-2 ring-blue-300 */
     outline-offset: -1px;
+}
+@font-face {
+    font-family: 'vazir';
+    src: url(./assets/fonts/vazirmatn/fonts/webfonts/Vazirmatn-Light.woff2) format('woff2'),
+    url(./assets/fonts/vazirmatn/fonts/webfonts/Vazirmatn-Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Alibaba;
+    src: url(./assets/fonts/alibaba-sans/AlibabaSans-Regular.ttf) format('ttf') ,
+    url(./assets/fonts/alibaba-sans/AlibabaSans-Regular.otf) format('otf');
+    font-weight: normal;
+    font-style: normal;
 }
